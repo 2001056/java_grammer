@@ -11,19 +11,11 @@ public class C01InputOutput {
 //        System.out.println(20); //1)println은 줄바꿈 있는 출력.2) 입출력은 모두 문자열로 진행
 //        System.out.print("hello world1"); //print는 줄바꿈이 없는 출력
 //        System.out.print("hello world2");
+
 //        입력1: Scanner 클래스 - 입력을 위한 클래스로서 바이트 단위 입력처리 System.in - 키보드입력
 //        Scanner myScanner = new Scanner(System.in);
 //        String input = myScanner.nextLine();  // 입력받은 데이터를 한줄로 읽어서,String으로 리턴
 //        System.out.println("사용자 입력 사항 : " + input);
-//        입력2 : BufferedReader : 1) 버퍼를 활용하여 더 좋은 성능 2) InputStreamReader 바이트 대신 문자단위로 입력
-
-//        아래와 같이 입력값이 주어졌을때 처리 방법
-        /*
-        abc
-        bcd
-        2
-        3
-        */
 //        Scanner myScanner = new Scanner(System.in);
 //        String input1 = myScanner.nextLine();
 //        String input2 = myScanner.nextLine();
@@ -34,6 +26,17 @@ public class C01InputOutput {
 //        System.out.println("입력사항3 : " + input3);
 //        System.out.println("입력사항4 : " + input4);
 
+
+
+
+//        입력2 : BufferedReader : 1) 버퍼를 활용하여 더 좋은 성능 2) InputStreamReader 바이트 대신 문자단위로 입력
+//        아래와 같이 입력값이 주어졌을때 처리 방법
+        /*
+        abc
+        bcd
+        2
+        3
+        */
 
 //        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 //        String input2 = br.readLine(); // 입력 받은 데이터를 한줄씩 read
