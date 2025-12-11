@@ -1,6 +1,4 @@
-import javax.management.monitor.StringMonitor;
-import java.util.Arrays;
-import java.util.regex.Pattern;
+package C01Basic;
 
 public class C08String {
     public static void main(String[] args) {

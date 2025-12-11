@@ -1,4 +1,5 @@
-import javax.sound.midi.Soundbank;
+package C01Basic;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

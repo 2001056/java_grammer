@@ -1,6 +1,6 @@
-import java.io.BufferedReader;
+package C01Basic;
+
 import java.io.IOException;
-import java.io.InputStreamReader;
 
 public class C05LoopStatement {
     public static void main(String[] args) throws IOException {

@@ -1,8 +1,6 @@
-import javax.smartcardio.ATR;
-import java.io.BufferedReader;
+package C01Basic;
+
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.*;
 
 public class C09Array {
     public static void main(String[] args) throws IOException {
