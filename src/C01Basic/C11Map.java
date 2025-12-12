@@ -13,7 +13,11 @@ public class C11Map {
         sports.put("배구",2);
         sports.put("농구",3);
 
-//        xmrwld : map key에는 순서가없음
+//        특징 : map key에는 순서가없음
         System.out.println(sports);
+//        특징 : map에서 key값을 통한 검색 복잡도는 O(1).
+        System.out.println(sports.get("배구"));
+
+//
     }
 }
