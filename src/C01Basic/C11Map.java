@@ -181,11 +181,37 @@ public class C11Map {
 
 //        백준 : 파일 정리
 
+////        LinkedHashMap : 데이터의 삽입 순서 보장(입력시간 순 정렬)
+//        Map<String, Integer> myMap = new LinkedHashMap<>();
+//        myMap.put("hello5", 1);
+//        myMap.put("hello4", 2);
+//        myMap.put("hello3", 3);
+//        myMap.put("hello2", 4);
+//        myMap.put("hello1", 5);
+//        for(String a : myMap.keySet()){
+//            System.out.println(myMap.get(a));
+//        }
+
+//        iterator를 활용한 출력
+//        Map<String, Integer> myMap = new HashMap<>();
+//        myMap.put("야구", 2);
+//        myMap.put("축구", 3);
+//        myMap.put("농구", 2);
+//        Iterator<String> iters = myMap.keySet().iterator();
+//////        next메서드는 데이터를 하나씩 소모시키면서 값을 반환
+////        System.out.println(iters.next());
+//////        hasNext 메서드는 iterator 안에 그 다음 값이 있는지 없는지 boolean 리턴
+////        System.out.println(iters.hasNext());
+//        while (iters.hasNext()){
+//            System.out.println(iters.next());
+//        }
+
+
 
 
 
 
     }
-    }
+}
 
 

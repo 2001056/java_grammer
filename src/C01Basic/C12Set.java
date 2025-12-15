@@ -34,6 +34,22 @@ public class C12Set {
 
 //        백준 : 숫자 카드 10815
 //        프로그래머스 : 폰켓몬 **
+//        집합관련함수: 교집합(retainAll), 합집합(addAll), 차집합(removeAll)
+//        Set<String> s1 = new HashSet<>();
+//        s1.add("java");
+//        s1.add("python");
+//        s1.add("c++");
+//        Set<String> s2 = new HashSet<>();
+//        s2.add("java");
+//        s2.add("html");
+//        s2.add("css");
+////        s1.retainAll(s2); // s1에는 교집합인 java만 남음
+////        System.out.println(s1);
+////        s1.addAll(s2); // s1에는 합집합인 java, python, c++, html, css가 남음
+////        System.out.println(s1);
+//        s1.removeAll(s2); // s1에는 차집합인 python, c++이 남음.
+//        System.out.println(s1);
+//
 
 
 
