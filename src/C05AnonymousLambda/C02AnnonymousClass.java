@@ -26,10 +26,38 @@ public class C02AnnonymousClass {
 //
 //            }
 //        };
-        Animal2 a2 = () -> {};
+//        인터페이스의 익명객체에 구현해야 할 메서드가 1개밖에 없을때에는 람다표현식(화살표함수) 사용가능
+//        Animal2 a2_1 = () -> {
+//            System.out.println("helloworld1");
+//            System.out.println("helloworld2");
+//        };
+//        a2_1.makeSound();
+////        실행문이 1줄 밖에 없을때에는 {} 생략가능
+//        Animal2 a2_2 = () -> System.out.println("helloworld1");
+//        a2_2.makeSound();
 
 
+//        매개변수가 있는 익명객체의 람다함수 생성
+        Animal3 a3_1 = (a,b,c) -> {
+            return  a+ ", " + b + ", " + c;
+        };
+        System.out.println(a3_1.makeSound("java","python","C++"));
+        Animal4 a4_1 = (a,b,c) -> {
+            if (c >= 10) {
+                return a+b;
+            }
+            else {
+                return a;
+            }
+
+        };
+        System.out.println(a4_1.makeSound("java","python",10));
     }
+
+
+//    실습)
+//    Animal4 인터페이스 생성 및makeSound메서드 선언 : 매개변수는 String String int 리턴타입은 String
+//    익명 객체 생성시 메서드의 기능 : 매개변수의 숫자값이 10이상이면 a+b리턴 10 미만이면 a만 리턴
 }
 abstract class AbstractAnimal{
     abstract void makeSound();
@@ -44,4 +72,11 @@ interface Animal1{
 }
 interface Animal2{
     void makeSound();
+}
+
+interface Animal3{
+    String makeSound(String a, String b, String c);
+}
+interface Animal4{
+    String makeSound(String a, String b, int c);
 }
