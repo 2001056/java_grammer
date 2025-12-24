@@ -15,10 +15,12 @@ public class MemberService {
 //        List(DB) 이메일이 중복일 경우 예외발생
         Member member = memberRepository.findByEmail(email);
          if(member != null){
-             throw new IllegalArgumentException();
+             throw new IllegalArgumentException("이미 가입된 이메일");
          }
 //        객체 조립 후 repository통해 저장
-
+        if (password.length()< 10){
+            throw new IllegalArgumentException("비밀번호가 너무 짧습니다");
+        }
         memberRepository.register(new Member(name, email, password));
     }
 

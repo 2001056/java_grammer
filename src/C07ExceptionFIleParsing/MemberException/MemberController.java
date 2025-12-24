@@ -19,14 +19,19 @@ public class MemberController {
                 System.out.println("이름을 입력해주세요");
                 String name = sc.nextLine();
                 System.out.println("이메일을 입력해주세요");
-                try {
-                    String email = sc.nextLine();
-                    System.out.println("비밀번호를 입력해주세요");
-                    String password = sc.nextLine();
+                String email = sc.nextLine();
+                System.out.println("비밀번호를 입력해주세요");
+                String password = sc.nextLine();
+//                사용자의 입력 값 단순검증
+                if(password.length() < 20 ){
+                    System.out.println("입력값이 너무 짧습니다.");
+                    return;
+                }
 //                회원가입시 발생하는 예외를 적절히 try/catch 컨트롤러에서
+                    try {
                     ms.register(name, email, password);
                 } catch (IllegalArgumentException e) {
-                    System.out.println("이미 가입된 이메일입니다.");
+                    System.out.println(e.getMessage());
                     e.printStackTrace();
                 }
             }
