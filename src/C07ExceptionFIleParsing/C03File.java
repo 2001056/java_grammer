@@ -38,7 +38,5 @@ public class C03File {
 //        Files.write(filePath,"홍길동0".getBytes(), StandardOpenOption.CREATE_NEW); // 생성
         Files.write(filePath,"홍길동1\n".getBytes(), StandardOpenOption.WRITE); // 덮어쓰기
         Files.write(filePath,"홍길동1\n".getBytes(), StandardOpenOption.APPEND); // 더하기
-
-
     }
 }

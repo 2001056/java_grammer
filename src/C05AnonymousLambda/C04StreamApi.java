@@ -189,17 +189,14 @@ public class C04StreamApi {
         myList.add(new Student("choi",30));
         myList.add(new Student("lee",35));
         myList.add(new Student("park",22));
-
         System.out.println("조회하고자하는 student의 index번호를 입력해 주세요");
         Scanner sc = new Scanner(System.in);
         int number = Integer.parseInt(sc.nextLine());
         Optional<Student> s1;
         if(myList.size()<= number || number < 0){
             s1 = Optional.empty();
-
         }else {
             s1 = Optional.of(myList.get(number));
-
         }
 
         System.out.println(s1.orElseThrow(()->new NoSuchElementException("없는 회원입니다.")));

@@ -16,7 +16,6 @@ public class C03EnumMain {
         Student s1 = new Student("h1",ClassGrade.FIRST_GRADE);
         Student s2 = new Student("h2",ClassGrade.SECOND_GRADE);
         Student s3 = new Student("h3",ClassGrade.THIRD_GRADE);
-
         System.out.println(s1);
         System.out.println(s2);
         System.out.println(s3);

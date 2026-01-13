@@ -2,7 +2,7 @@ package C08Thread;
 
 public class Library {
     private static int bookCount = 100;
-//    Syncronized : 메서드내에서 1개으 ㅣ스레드만을 실행되도록 보장
+//    Syncronized : 메서드내에서 1개의 스레드만을 실행되도록 보장
 //    public synchronized static void borrow(){
     public static void borrow(){
         if(bookCount>0){
